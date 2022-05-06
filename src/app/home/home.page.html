@@ -1,20 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+      #JusticeForJohnny
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <!--Menu of buttons for navigation-->
+  <ul style="display: block;">
+    <li [routerLink]="['/rum-gone']" routerDirection="forward">Rum gone?</li>
+    <li [routerLink]="['/jds-song']" routerDirection="forward">JD's song</li>
+    <li [routerLink]="['/movies']" routerDirection="forward">Movies</li>
+  </ul>
+
+  <ion-button (click)="Flashlight()">Flashlight</ion-button>
+
+<img src="https://c.tenor.com/dcjgBhm1GpEAAAAC/johnny-depp-depp.gif" alt="HappyHour" class=”center”  width="320" height="200">
+<br>
+
+<img src="https://c.tenor.com/7_6SE-1lyT0AAAAd/johnny-depp.gif" alt="MegaPint" class=”center”  width="320" height="180" >
+ {{myMovie}}
+ <br>
+<ion-button [routerLink]="['/status']">Favourite Movie</ion-button>
 </ion-content>
+
+  
+
+
+  
+
+  

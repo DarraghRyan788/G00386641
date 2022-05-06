@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Favourite Movie</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<br>
+<br>
+<ion-title>From the list below, choose your favourite Johnny Depp movie!</ion-title>
+
+
+<ion-list>
+  <ion-radio-group [(ngModel)]="myMovie">
+    <ion-list-header>
+      <ion-label></ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      
+      <ion-label>Pirates of the Carribean</ion-label>
+      <ion-radio slot="start" value="Pirates of the Carribean"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Edward Scissorhands</ion-label>
+      <ion-radio slot="start" value="Edward Scissorhands"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fear & Loathing in Las Vegas</ion-label>
+      <ion-radio slot="start" value="Fear & Loathing in Las Vegas"></ion-radio>
+    </ion-item>
+
+<ion-item>
+  <ion-label>Sleepy Hollow</ion-label>
+  <ion-radio slot="start" value="Sleepy Hollow"></ion-radio>
+</ion-item>
+
+<ion-item>
+  <ion-label>From Hell</ion-label>
+  <ion-radio slot="start" value="From Hell"></ion-radio>
+</ion-item>
+</ion-radio-group>
+</ion-list>
+<ion-button (click)="saveMovie()">Save Choice</ion-button>
+<br>
+<br>
+<ion-title>Favourite movie is:  {{myMovie}}</ion-title>
+</ion-content>
