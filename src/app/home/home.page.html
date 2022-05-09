@@ -16,14 +16,17 @@
     <li [routerLink]="['/movies']" routerDirection="forward">Movies</li>
   </ul>
 
+  <!--Flashlight-->
   <ion-button (click)="Flashlight()">Flashlight</ion-button>
 
+  <!--Gifs-->
 <img src="https://c.tenor.com/dcjgBhm1GpEAAAAC/johnny-depp-depp.gif" alt="HappyHour" class=”center”  width="320" height="200">
 <br>
 
 <img src="https://c.tenor.com/7_6SE-1lyT0AAAAd/johnny-depp.gif" alt="MegaPint" class=”center”  width="320" height="180" >
  {{myMovie}}
  <br>
+ <!--Favourite movie button-->
 <ion-button [routerLink]="['/status']">Favourite Movie</ion-button>
 </ion-content>
 
